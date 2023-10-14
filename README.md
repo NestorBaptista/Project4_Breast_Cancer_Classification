@@ -2,9 +2,9 @@
 
 ## Table of content
 
--[Context](#context)
--[Project Overview](#project-overview)
--[Data Source](#data-source)
+- [Context](#context)
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
 - [Methodology](#methodology)
   - [Exploratory Data Analysis](#exploratory-data-analysis)
   - [Model Architecture](#model-architecture)
@@ -23,7 +23,7 @@ Deep learning analysis of radiological images has the potential to improve diagn
 
 ## Data Source
 
-The dataset used in this project was obtained from [CBIS-DDSM: Breast Cancer Image Dataset](https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset/data) on Kaggle. (Rebecca Sawyer Lee, Francisco Gimenez, Assaf Hoogi , Daniel Rubin  (2016). **Curated Breast Imaging Subset of DDSM [/[Dataset]**. The Cancer Imaging Archive. **DOI:**  https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY).
+The dataset used in this project was obtained from [CBIS-DDSM: Breast Cancer Image Dataset](https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset/data) on Kaggle. (Rebecca Sawyer Lee, Francisco Gimenez, Assaf Hoogi , Daniel Rubin  (2016))
 
 
 ## Methodology
