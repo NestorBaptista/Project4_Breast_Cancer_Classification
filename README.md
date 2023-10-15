@@ -67,6 +67,7 @@ Our initial model architecture was designed as follows:
 References for creating choropleth map visual
 
 https://plotly.com/python/choropleth-maps/
+
 https://towardsdatascience.com/simplest-way-of-creating-a-choropleth-map-by-u-s-states-in-python-f359ada7735e
 
 Reference for assigning ISO code to a dataframe with the state in a column already exisiting
