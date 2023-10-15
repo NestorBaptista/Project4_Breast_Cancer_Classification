@@ -2,14 +2,14 @@
 
 ## Table of content
 
--[Context](#context)
+- [Context](#context)
 - [Project Overview](#project-overview)
--[Data Source](#data-source)
+- [Data Source](#data-source)
 - [Methodology](#methodology)
-  - [Variables](#variables)
+  - [Exploratory Data Analysis](#exploratory-data-analysis)
   - [Model Architecture](#model-architecture)
-  - [Initial Model](#initial-model)
-  - [Optimized Model](#optimized-model)
+    - [Initial Model](#initial-model)
+    - [Optimized Model](#optimized-model)
 - [Summary](#summary)
 
 
@@ -23,54 +23,31 @@ Deep learning analysis of radiological images has the potential to improve diagn
 
 ## Data Source
 
-The dataset used in this project was obtained from [CBIS-DDSM: Breast Cancer Image Dataset](https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset/data) on Kaggle. (Rebecca Sawyer Lee, Francisco Gimenez, Assaf Hoogi , Daniel Rubin  (2016). **Curated Breast Imaging Subset of DDSM [/[Dataset]**. The Cancer Imaging Archive. **DOI:**  https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY).
+The dataset used in this project was obtained from [CBIS-DDSM: Breast Cancer Image Dataset](https://www.kaggle.com/datasets/awsaf49/cbis-ddsm-breast-cancer-image-dataset/data) on Kaggle. (Rebecca Sawyer Lee, Francisco Gimenez, Assaf Hoogi , Daniel Rubin  (2016))
 
 
 ## Methodology
 
-SOMTHING HERE
+SOMETHING HERE
 
 ### Exploratory Data Analysis
 
-
-### Variables
-
-**Target Variable:**
-- IS_SUCCESSFUL
-
-**Feature Variables:**
-- APPLICATION_TYPE
-- AFFILIATION
-- CLASSIFICATION
-- USE_CASE
-- ORGANIZATION
-- STATUS
-- INCOME_AMT
-- SPECIAL_CONSIDERATIONS
-- ASK_AMT
-
-**Excluded Variables:**
-- EIN
-- NAME
+SOMETHING HERE
 
 ### Model Architecture
 
 Our initial model architecture was designed as follows:
 
-- **First Hidden Layer:** 80 neurons with relu activation function
-- **Second Hidden Layer:** 20 neurons with relu activation function
-- **Output Layer:** 1 neuron with sigmoid activation function
+*AREFIN EXPLAIN HERE*
 
-The model underwent training over 100 epochs to optimize its performance.
-
-### Initial Model
+#### Initial Model
 
 - **First Hidden Layer:** 50 neurons, relu activation
 - **Second Hidden Layer:** 20 neurons, relu activation
 - **Output Layer:** 1 neuron, sigmoid activation
 - **Training Epochs:** 100
 
-### Optimized Model
+#### Optimized Model
 
 - **First Hidden Layer:** 100 neurons, relu activation
 - **Second Hidden Layer:** 50 neurons, relu activation
@@ -81,4 +58,5 @@ The model underwent training over 100 epochs to optimize its performance.
 
 ## Summary
 
-In both the original and optimized models, achieving an accuracy rate exceeding 73% in predicting applicant success proved challenging. Rigorous attempts were made, involving adjustments in binning thresholds for categorical variables, modifications to the number of neurons in hidden layers, layer counts, exploration of various activation functions, and extension of training epochs. Despite these systematic adjustments, accuracy stubbornly plateaued between 72% and 73%.
+*CONCLUSION OF MODEL PERFORMANCE*
+
