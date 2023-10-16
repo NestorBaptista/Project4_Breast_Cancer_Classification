@@ -28,7 +28,7 @@ The dataset used in this project was obtained from [CBIS-DDSM: Breast Cancer Ima
 
 ## Methodology
 
-SOMETHING HERE
+Started with deciding exactly what kind of data we wanted to work with. Healthcare was decided. Looked into different topics and decided on breast cancer. For the machine learning component, we decided it might be interesting to work with images based on the powerful models that could be created to predict images. Overall intrigued with how models would progress and if any features would prove to explain the reason behind the models and if there were any potential outliers. Through data exploration we were able to look closer at what elements would be required to complete our objectives. We initally worked with our datasets and the images through google colab. As there were nearly 5 GB worth of image data, we thought it would be beneficial to see if there were alternate routes to hosting the data. The data was later moved to AWS the data, images, and models were all compatible. Images were held in buckets and model pulled image data from buckets successful and executed the code. Through deep learning models we were able to classify the classifications of these breast cancer images benign, benign without callback, and malignant. Through exploratory data analysis able to look at individual features more closely to see their impact on the model and breast cancer as a whole. Made some conclusion statements from all our findings.
 
 ### Exploratory Data Analysis
 
