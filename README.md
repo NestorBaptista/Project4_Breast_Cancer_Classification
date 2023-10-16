@@ -11,6 +11,7 @@
     - [Initial Model](#initial-model)
     - [Optimized Model](#optimized-model)
 - [Summary](#summary)
+- [References](#References)
 
 
 ## Context
