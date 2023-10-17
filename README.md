@@ -1,4 +1,4 @@
-# Project4_Breast_Cancer_EDA
+# Project4_Breast_Cancer_Classification
 
 ## Table of content
 
