@@ -50,18 +50,18 @@ To get the statistical information and map visuals, the data was taken from http
 
 Model: "model"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+ Layer (type)                  Output Shape              Param   
 =================================================================
- input_layer (InputLayer)    [(None, 200, 200, 3)]     0         
+ input_layer (InputLayer)      [(None, 200, 200, 3)]          0         
                                                                  
- data_augmentation (Sequential (None, None, None, None   0))                                   
+ data_augmentation (Sequential (None, None, None, None        0))
                                                                  
- efficientnetv2-b0 (Functional (None, None, None, 1280   5919312))                                   
+ efficientnetv2-b0 (Functional (None, None, None, 1280     5919312))                                   
                                                                  
- global_average_pooling_layer (None, 1280)              0         
+ global_average_pooling_layer  (None, 1280)                   0         
   (GlobalAveragePooling2D)                                                               
                                                                  
- output_layer (Dense)        (None, 3)                 3843      
+ output_layer (Dense)          (None, 3)                     3843
                                                                  
 =================================================================
 Total params: 5923155 (22.60 MB)
@@ -104,7 +104,8 @@ Non-trainable params: 5919312 (22.58 MB)
 - Attempted optimization using fine tuning by unfreezing top 10 layers and then all layers for both mass and calcification datasets
 - The models can predict only the malignant cases with satisfactory accuracies
 
-*CONCLUSION OF MODEL PERFORMANCE*
+## CONCLUSION OF MODEL PERFORMANCE
+
 For the calcification test set, for all our trials, the models could predict about 57% of the Malignant cases and only about 30% of the Benign cases.
 In contrast, with the Mass test set, the models were generally good at identifying the about 79% of the Malignant cases but they quite literally failed to detect the normal cases.
 
