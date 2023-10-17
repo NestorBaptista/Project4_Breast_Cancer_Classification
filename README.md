@@ -39,29 +39,76 @@ To get the statistical information and map visuals, the data was taken from http
 
 ### Model Architecture
 
-Our initial model architecture was designed as follows:
+- Adopted transfer learning method using the EfficientNetV2B0 architecture
+- Fit the model to our desired output classes
+- Tested on multi-class classification
+- Tested on binary classification
 
-*AREFIN EXPLAIN HERE*
+![Model](ML_outputs/06-efficientnetb0-feature-extractor-with-dense-layer-on-top.png)
 
-#### Initial Model
+#### Baseline Model for multi-class classification
 
-- **First Hidden Layer:** 50 neurons, relu activation
-- **Second Hidden Layer:** 20 neurons, relu activation
-- **Output Layer:** 1 neuron, sigmoid activation
-- **Training Epochs:** 100
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_layer (InputLayer)    [(None, 200, 200, 3)]     0         
+                                                                 
+ data_augmentation (Sequential (None, None, None, None   0))                                   
+                                                                 
+ efficientnetv2-b0 (Functional (None, None, None, 1280   5919312))                                   
+                                                                 
+ global_average_pooling_layer (None, 1280)              0         
+  (GlobalAveragePooling2D)                                                               
+                                                                 
+ output_layer (Dense)        (None, 3)                 3843      
+                                                                 
+=================================================================
+Total params: 5923155 (22.60 MB)
+Trainable params: 3843 (15.01 KB)
+Non-trainable params: 5919312 (22.58 MB)
 
-#### Optimized Model
+#### Training and Validation histories
 
-- **First Hidden Layer:** 100 neurons, relu activation
-- **Second Hidden Layer:** 50 neurons, relu activation
-- **Third Hidden Layer:** 20 neurons, sigmoid activation
-- **Fourth Hidden Layer:** 10 neurons, sigmoid activation
-- **Output Layer:** 1 neuron, sigmoid activation
-- **Training Epochs:** 100
+- Baseline (calc-multi-class)
+![calc-multi-class](ML_outputs/calc_EfficientNetV2B0-6.png)
+
+- Optimized (calc-multi-class)
+![calc-multi-class - opt](ML_outputs/calc_EfficientNetV2B0-8.png)
+
+- Baseline (mass-multi-class)
+![mass-multi-class](ML_outputs/mass_model_0_fineTuned_top10layers_multiclass_massData.png)
+
+- Optimized (mass-multi-class)
+![mass-multi-class - opt](ML_outputs/mass_model_1_fineTuned_ALLlayers_multiclass_massData.png)
+
+
+- Baseline (calc-Binary-class)
+![calc-Binary-class](ML_outputs/calc_EfficientNetV2B0-BWC-M-6.png)
+
+- Optimized (calc-Binary-class)
+![calc-Binary-class - opt](ML_outputs/calc_EfficientNetV2B0-BWC-M-8.png)
+
+- Baseline (mass-Binary-class)
+![mass-Binary-class](ML_outputs/model_0_fineTuned_top10layers_binaryClass_massData.png)
+
+- Optimized (mass-Binary-class)
+![mass-Binary-class - opt](ML_outputs/model_1_fineTuned_ALLlayers_binaryClass_massData.png)
 
 ## Summary
 
+- Presented breast cancer mammography image dataset
+- Performed data exploration, feature analysis, and analytics on the textual and image data
+- Hosted image data on AWS S3 buckets, trained and tested using AWS SageMaker
+- Implemented a transfer learning method using the EfficientNetV2B0 model
+- Attempted optimization using fine tuning by unfreezing top 10 layers and then all layers for both mass and calcification datasets
+- The models can predict only the malignant cases with satisfactory accuracies
+
 *CONCLUSION OF MODEL PERFORMANCE*
+For the calcification test set, for all our trials, the models could predict about 57% of the Malignant cases and only about 30% of the Benign cases.
+In contrast, with the Mass test set, the models were generally good at identifying the about 79% of the Malignant cases but they quite literally failed to detect the normal cases.
+
+These results reflect the findings that Mammograms miss about 40% of breast cancers in the densest breasts. (Breast Cancer Institute, 2018)
 
 ## References
 
