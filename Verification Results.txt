@@ -1,0 +1,41 @@
+------- Only ALL of CALC training datasets ----- ((FOR verification))
+## Resnet50v2
+# Evaluate on the test data **USING TRANSFER LEARNING AND NO FINE TUNING
+loss: 4.9214 - accuracy: 0.3865
+
+# Evaluate the model on the test data ** USING TF AND FINE TUNING ON LAST 30 layers
+loss: 2.2620 - accuracy: 0.4632
+
+# Evaluate the model on the test data ** USING TF AND FINE TUNING ON ALL LAYERS
+loss: 1.0210 - accuracy: 0.5184
+
+
+## EfficientNetV2B0
+# Evaluate on the test data **USING TRANSFER LEARNING AND NO FINE TUNING
+loss: 0.9030 - accuracy: 0.5092
+
+# Evaluate on the test data **USING TRANSFER LEARNING AND 30 layer FINE TUNING
+loss: 0.8631 - accuracy: 0.5368
+
+# Evaluate on the test data **USING TRANSFER LEARNING AND ALL layer FINE TUNING
+loss: 1.0167 - accuracy: 0.5706
+
+----------------------------- Binary with BWC and M
+# Evaluate on the test data **USING TRANSFER LEARNING AND NO FINE TUNING
+loss: 0.3493 - accuracy: 0.8520
+
+# Evaluate on the test data **USING TRANSFER LEARNING AND 10 layer FINE TUNING
+loss: 0.3287 - accuracy: 0.8776
+
+# Evaluate on the test data **USING TRANSFER LEARNING AND ALL layer FINE TUNING
+loss: 0.3200 - accuracy: 0.8724
+
+----------------------------- Binary with B and M
+# Evaluate on the test data **USING TRANSFER LEARNING AND NO FINE TUNING
+loss: 0.6674 - accuracy: 0.5869
+
+# Evaluate on the test data **USING TRANSFER LEARNING AND 10 layer FINE TUNING
+loss: 0.7036 - accuracy: 0.5946
+
+# Evaluate on the test data **USING TRANSFER LEARNING AND ALL layer FINE TUNING
+loss: 1.1112 - accuracy: 0.5869
